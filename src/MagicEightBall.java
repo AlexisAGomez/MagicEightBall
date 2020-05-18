@@ -112,35 +112,3 @@ public class MagicEightBall {
 }
 
 
-class test {
-
-//    public static void main(String[] args) {
-//        MagicEightBall magic8ball = new MagicEightBall();
-//        magic8ball.repeatQuestion.setFalse();
-//        while(true) {
-//            Scanner in = new Scanner(System.in);
-//            String Question = in.nextLine();
-//            if(Question.toLowerCase().equals("exit")) break;
-//            System.out.println(magic8ball.ask(Question));
-//
-//        }
-//    }
-
-    public static void main(String[] args) {
-
-        ArrayList<String> questions = new ArrayList<>(Arrays.asList(
-                "What is the meaning of life?","What is 2+2?","What is Pi"
-        ));
-
-        MagicEightBall ball = new MagicEightBall();
-        ArrayList<MagicEightBall> responses = ball.ask(questions);
-
-        responses.forEach(a -> {
-            System.out.println(a.getQuestion() + "\n" + a.getAnswer() );
-        });
-
-    }
-
-
-
-}
